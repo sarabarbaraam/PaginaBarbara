@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Equipos</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Cursos</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Perfil</a>
+            <input type="text" placeholder="Buscar">
+        </nav>
+        <div class="perfil">KC</div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <ul>
+                <li>Material</li>
+                <li>Proveedores</li>
+                <li>Departamentos</li>
+                <li>Directorio</li>
+                <li>Formación</li>
+                <li>Configuración</li>
+            </ul>
+        </aside>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipo</th>
+                        <th>Etiqueta</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="assets/images/pc1.png" alt="Equipo 1">
+                            <div>
+                                <strong>Portátil Lenovo Thinkpad</strong>
+                                <p>Dpto. Desarrollo</p>
+                            </div>
+                        </td>
+                        <td>E0001</td>
+                        <td>En reparación</td>
+                        <td>
+                            <button class="borrar">Borrar</button>
+                            <button class="editar">Editar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/images/pc2.png" alt="Equipo 2">
+                            <div>
+                                <strong>Portátil Lenovo Thinkpad</strong>
+                                <p>Dpto. Desarrollo</p>
+                            </div>
+                        </td>
+                        <td>E0002</td>
+                        <td>En reparación</td>
+                        <td>
+                            <button class="borrar">Borrar</button>
+                            <button class="editar" onclick="location.href='detail.html'">Editar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <p>2025 KeepCoding</p>
+        <p>
+            <a href="#">Privacidad</a> | 
+            <a href="#">FAQs</a> | 
+            <a href="#">Contactar</a>
+        </p>
+    </footer>
+
+</body>
+</html>

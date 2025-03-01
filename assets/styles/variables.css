@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #f8f8f8;
+    --secondary-color: #ddd;
+    --border-color: #ccc;
+    --text-color: #333;
+    --button-bg: #007bff;
+    --button-text: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav input {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    width: 200px;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+aside ul li {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px var(--border-color);
+}
+
+.detalle-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.imagen-equipo img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.form-group textarea {
+    resize: none;
+}
+.botones {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.cancelar {
+    background: #dc3545;
+    color: white;
+}
+.guardar {
+    background: var(--button-bg);
+    color: var(--button-text);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--secondary-color);
+    margin-top: 20px;
+    border-top: 2px solid var(--border-color);
+}

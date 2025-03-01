@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #f8f8f8;
+    --secondary-color: #ddd;
+    --border-color: #ccc;
+    --text-color: #333;
+    --button-bg: #007bff;
+    --button-text: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 10px;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav {
+    flex-grow: 1;
+    text-align: center;
+}
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+header input {
+    padding: 5px;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    width: 200px;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+aside li {
+    padding: 10px 0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+tr td:first-child {
+    display: flex;
+    align-items: center;
+}
+tr td img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+button {
+    padding: 5px 10px;
+    margin: 2px;
+}
+.borrar {
+    background: red;
+    color: white;
+}
+.editar {
+    background: gray;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--secondary-color);
+    margin-top: 20px;
+    border-top: 2px solid var(--border-color);
+}
